@@ -1,0 +1,280 @@
+
+body{
+	background-color: #B4D6DC;
+}
+
+nav {
+
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+    background: #5A8DC4;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    font-family: "Calibri";
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav ul#menu {
+    margin-right: 8px;
+}
+nav ul#logo li {
+    width: auto;
+}
+nav ul#logo li a {
+    display: block;
+}
+nav ul#logo li img {
+    padding: 5px;
+    height: 90%;
+}
+
+
+nav ul li {
+    position: relative;
+    height: 100%;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #EEF2F5;
+    transition: color 0.25s ease-out;
+}
+nav ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 8px;
+}
+nav ul li a:hover {
+    color: rgb(174, 186, 199);
+}
+
+
+nav ul li a.dropdown-start {
+    position: relative;
+}
+nav ul.dropdown {
+    position: absolute;
+    display: none;
+    z-index: -3;
+    width: 192px;
+    right: 0;
+    padding: 8px 8px;
+    background: #fbfbfb;
+    height: auto;
+    border-top: 3px solid #2ea3f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 8px 8px;
+}
+nav ul.dropdown li {
+    height: auto;
+    display: block;
+}
+nav ul.dropdown li a {
+    display: block;
+    padding: 8px 8px;
+    border-radius: 8px;
+    transition: color 0.25s ease-out, background 0.25s ease-out;
+}
+nav ul.dropdown li a:hover {
+    background: rgba(0, 0, 0, 0.025);
+}
+
+
+nav ul.dropdown:hover {
+    display: block;
+}
+nav ul li a.dropdown-start:hover + ul.dropdown {
+    display: block;
+}
+
+
+section {
+	display: flex;
+	flex-direction: row;
+	background-image: url("image/ciel.gif");
+	background-size: cover; 
+	background-position: center;
+	margin-top: 90px;
+	padding: 20px;
+	border-radius: 30px;
+}
+
+article{
+	font-size: 20px;
+	color: white;
+}
+figure{
+	
+}
+
+
+aside {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.ide1{
+    background-image: url("image/scilab-logo.png");
+	background-size: cover; 
+	background-position: center;
+	height: 115px;
+	width: 260px;
+	border-radius:30px;
+	box-shadow: -10px 5px 5px black;
+	transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.ide1:hover {
+    filter: brightness(150%);
+    transform: translateX(100px);
+}
+.ide2{
+	background-image: url("image/eclipse-logo.png");
+	background-size: cover; 
+	background-position: center;
+	height: 115px;
+	width: 350px;
+	border-radius:30px;
+	box-shadow: -10px 5px 5px black;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+
+.ide2:hover {
+    filter: brightness(140%);
+    transform: translateX(100px);
+}
+.ide3{
+	background-image: url("image/netbeans-logo.jpg");
+	background-size: cover; 
+	background-position: center;
+	height: 115px;
+	width: 260px;
+	border-radius:30px;
+	box-shadow: -10px 5px 5px black;
+	transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.ide3:hover {
+    filter: brightness(140%);
+    transform: translateX(100px);
+}
+
+
+
+
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 2%;
+	margin-top: 50px;
+}
+footer p{
+	background-color: #E5F2FB;
+	padding: 15px;    
+}
+
+.log1{
+	display:flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+	
+}
+.log2{
+	display:flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+
+}
+.log3{
+	display:flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+	
+}
+#pres{
+	background-color: #EFF5F5;
+	width: 80%;	
+	border-radius:15px;
+	box-shadow: -10px 5px 10px gray;
+	padding: 30px;
+}
+#img{
+	background-color: #E8F7F9;
+	width: 15%;
+	height: 320px;
+	border-radius:15px;
+	margin-top: 50px;
+	text-align: center;
+	padding: 30px;
+	box-shadow: -5px 5px 5px gray;
+}
+
+
+#contact p{
+	font-family: 'Impact';
+	font-size: 20px;
+	color: #052048;
+}
+
+ul.social {
+    list-style: none;
+    display: block;
+    background-color: #DCB8BC;
+    padding: 7px;
+
+}
+ul.social li {
+    display: inline-block;
+    margin: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+ul.social li a {
+    display: block;
+    border-radius: 3px;
+    color: white !important;
+    padding: 4px;
+    height: 100%;
+}
+
+ul.social li.facebook a {
+    background-image: url("image/facebook-logo.jpg");
+    background-size: 50px;
+    background-position: center;
+}
+ul.social li.linkedin a {
+    background-image: url("image/LinkedIn-Logo.jpg");
+    background-size: 50px;
+    background-position: center;
+}
+ul.social li.twitter a {
+    background-image: url("image/twitter-logo.jpg");
+    background-size: 38px;
+    background-position: center;
+}
+ul.social li.instagram a {
+    background-image: url("image/instagram-logo.jfif");
+    background-size: 45px;
+    background-position: center;
+}
